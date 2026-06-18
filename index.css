@@ -950,22 +950,19 @@ body:hover .cursor-glow {
     font-weight: 600;
 }
 
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.footer-link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.footer-links li {
-    margin-bottom: 12px;
-}
-
-.footer-links a {
+.footer-link-group a {
     color: var(--color-muted);
     transition: color var(--transition-fast);
+    display: inline-block;
 }
 
-.footer-links a:hover {
+.footer-link-group a:hover {
     color: var(--color-gold);
 }
 
