@@ -1,5 +1,5 @@
 /* ==========================================================================
-   AXE DIGITAL - PREMIUM COMPLIANT LANDING PAGE ENGINE (index.js)
+   PREMIUM COMPLIANT LANDING PAGE ENGINE (index.js)
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
