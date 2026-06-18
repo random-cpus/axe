@@ -334,51 +334,16 @@ button {
     transform: scale(1.02);
 }
 
-/* Floating widgets inside Hero */
-.floating-widget {
-    position: absolute;
-    background: rgba(21, 21, 21, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,255,255,0.06);
-    padding: 14px 20px;
-    border-radius: 12px;
-    box-shadow: var(--shadow-premium);
-    animation: float 4s ease-in-out infinite;
+/* Floating widgets inside Hero (Removed for Ads Compliance) */
+
+/* 6.5. TRANSPARENCY SECTION */
+.transparency-section {
+    padding: 120px 0;
+    background-color: var(--color-surface);
 }
 
-.widget-speed {
-    bottom: -25px;
-    left: -20px;
-    border-left: 3px solid #00E676;
-}
-
-.widget-response {
-    top: 40px;
-    right: -25px;
-    border-left: 3px solid var(--color-gold);
-    animation-delay: 2s;
-}
-
-.widget-flex {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.widget-label {
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--color-muted);
-    letter-spacing: 1px;
-    margin-bottom: 2px;
-}
-
-.widget-value {
-    font-family: var(--font-heading);
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: var(--color-white);
+.transparency-grid {
+    margin-top: 20px;
 }
 
 @keyframes float {
@@ -388,13 +353,14 @@ button {
 }
 
 /* 7. WHY US / FEATURES SECTION */
-.why-play-section, .games-section {
+.why-play-section {
     padding: 120px 0;
-    background-color: var(--color-surface);
+    background-color: var(--color-bg);
 }
 
 .games-section {
-    background-color: var(--color-bg); /* Alternate sections bg */
+    padding: 120px 0;
+    background-color: var(--color-surface);
 }
 
 .why-card {
@@ -464,7 +430,7 @@ button {
 /* 9. HOW IT WORKS SECTION */
 .how-it-works-section {
     padding: 120px 0;
-    background-color: var(--color-surface);
+    background-color: var(--color-bg);
 }
 
 .steps-timeline {
@@ -525,7 +491,7 @@ button {
 /* 13. USER FEEDBACK SECTION */
 .testimonials-section {
     padding: 120px 0;
-    background-color: var(--color-bg);
+    background-color: var(--color-surface);
 }
 
 .testimonials-container {
@@ -663,7 +629,7 @@ button {
 /* 14. FAQ SECTION */
 .faq-section {
     padding: 120px 0;
-    background-color: var(--color-surface);
+    background-color: var(--color-bg);
 }
 
 .faq-container {
@@ -941,6 +907,81 @@ body:hover .cursor-glow {
     transform: translateY(0);
 }
 
+/* 18. COMPLIANT FOOTER */
+.main-footer {
+    background-color: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+    padding: 80px 0 30px;
+    font-size: 0.9rem;
+    color: var(--color-muted);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+.footer-about .logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-white);
+    display: inline-block;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-about .logo span {
+    color: var(--color-gold);
+}
+
+.footer-about-text {
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+.footer-links h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-white);
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: var(--color-muted);
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--color-gold);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--color-border);
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
 /* ==========================================================================
    19. RESPONSIVE MEDIA QUERIES
    ========================================================================== */
@@ -980,7 +1021,7 @@ body:hover .cursor-glow {
         width: 100%;
     }
     
-    .why-grid {
+    .why-grid, .transparency-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -1035,7 +1076,7 @@ body:hover .cursor-glow {
         display: block;
     }
     
-    .why-grid {
+    .why-grid, .transparency-grid {
         grid-template-columns: 1fr;
     }
     
