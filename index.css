@@ -215,12 +215,20 @@ button {
 }
 
 .hero-container {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 48px;
+    text-align: center;
     position: relative;
     z-index: 2;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .promo-badge {
@@ -277,8 +285,8 @@ button {
 .hero-subtitle {
     font-size: 1.2rem;
     color: var(--color-muted);
-    margin-bottom: 36px;
-    max-width: 550px;
+    margin: 0 auto 36px auto;
+    max-width: 650px;
     line-height: 1.5;
 }
 
@@ -292,6 +300,7 @@ button {
 .hero-badges {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
 }
 
