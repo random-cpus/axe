@@ -5,7 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // 1. CENTRALIZED DESTINATION URL CONFIGURATION (Edit this placeholder value)
-    const DESTINATION_URL = "https://axecasmedia.com/alpsdecc3";
+    const DESTINATION_URL = "https://asia.adform.net/C/?bn=88109405;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_50}";
 
 
 
